@@ -1,9 +1,8 @@
 const { Router } = require('express');
 const router = Router();
 
-router.get('/', (res) =>{
+router.get("/", (req,res,next) => {
     res.render('landing');
-
 });
 
 module.exports = router;
